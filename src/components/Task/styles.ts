@@ -1,0 +1,63 @@
+import { StyleSheet } from 'react-native'
+
+export const styles = StyleSheet.create({
+  container: {
+    backgroundColor: '#262626',
+    borderRadius: 6,
+    color: '#FFF',
+    padding: 10,
+    fontSize: 16,
+    flex: 1,
+    gap: 8,
+    borderWidth: 1,
+    borderColor: '#333333',
+    flexDirection: 'row',
+    justifyContent: 'center',
+    alignItems: 'center',
+    marginBottom: 8,
+  },
+  circle: {
+    height: 18,
+    width: 18,
+    borderColor: '#4EA8DE',
+    borderWidth: 2,
+    borderRadius: 50,
+    margin: 3,
+  },
+  circleCheck: {
+    height: 18,
+    width: 18,
+    backgroundColor: '#5E60CE',
+    borderRadius: 50,
+    margin: 3,
+    justifyContent: 'center',
+    alignContent: 'center',
+    textAlign: 'center',
+  },
+  iconCheck: {
+    color: '#F2F2F2',
+    fontSize: 10,
+    marginLeft: 4.5,
+  },
+  text: {
+    color: '#F2F2F2',
+    flex: 1,
+    lineHeight: 19,
+    fontSize: 14,
+  },
+  textCheck: {
+    color: '#808080',
+    flex: 1,
+    lineHeight: 19,
+    fontSize: 14,
+    textDecorationLine: 'line-through',
+  },
+  button: {
+    width: 40,
+    height: 40,
+    justifyContent: 'center',
+    alignItems: 'center',
+    // backgroundColor: 'lime',
+  },
+  buttonIcon: {},
+})
