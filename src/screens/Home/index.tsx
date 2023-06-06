@@ -7,7 +7,25 @@ import { AnyTasks } from '../../components/AnyTasks'
 import { Task } from '../../components/Task'
 
 export function Home() {
-  const tasks = ['many', 'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h'] as string[]
+  const tasks = [
+    'many',
+    'a',
+    'b',
+    'c',
+    'd',
+    'e',
+    'f',
+    'g',
+    'h',
+    'aa',
+    'ba',
+    'ca',
+    'da',
+    'ea',
+    'fa',
+    'ga',
+    'ha',
+  ] as string[]
   return (
     <View style={style.container}>
       <Header />
@@ -20,6 +38,9 @@ export function Home() {
           keyExtractor={(item) => item}
           renderItem={({ item }) => <Task />}
           ListEmptyComponent={AnyTasks}
+          contentContainerStyle={{
+            paddingBottom: 320,
+          }}
         />
       </View>
     </View>
