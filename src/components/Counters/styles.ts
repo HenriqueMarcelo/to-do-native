@@ -4,6 +4,7 @@ export const styles = StyleSheet.create({
   container: {
     justifyContent: 'space-between',
     flexDirection: 'row',
+    marginBottom: 20,
   },
   row: {
     gap: 8,
@@ -21,6 +22,7 @@ export const styles = StyleSheet.create({
   },
   number: {
     color: '#D9D9D9',
+    fontWeight: 'bold',
     backgroundColor: '#333333',
     borderRadius: 50,
     padding: 0,
