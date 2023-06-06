@@ -1,12 +1,12 @@
-import { StyleSheet } from "react-native";
+import { StyleSheet } from 'react-native'
 
 export const style = StyleSheet.create({
-    container: {
-      flex: 1,
-      backgroundColor: '#1A1A1A',
-    },
-    subContainer: {
-      paddingRight: 24,
-      paddingLeft: 24,
-    },
-  });
+  container: {
+    flex: 1,
+    backgroundColor: '#1A1A1A',
+  },
+  subContainer: {
+    paddingRight: 24,
+    paddingLeft: 24,
+  },
+})

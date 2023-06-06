@@ -1,13 +1,11 @@
-import { StatusBar } from 'expo-status-bar';
-import { Home } from './src/screens/Home';
+import { StatusBar } from 'expo-status-bar'
+import { Home } from './src/screens/Home'
 
 export default function App() {
   return (
     <>
-      <Home/>
+      <Home />
       <StatusBar style="light" />
     </>
-  );
+  )
 }
-
-
