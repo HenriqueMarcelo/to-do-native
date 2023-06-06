@@ -14,7 +14,7 @@ export function Form({ onCreateTask }: FormProps) {
     const task = {
       id: Date.now().toString(36),
       text: inputText,
-      completedAt: null,
+      completed: false,
     } as TaskType
 
     setInputText('')

@@ -10,7 +10,7 @@ import { useState } from 'react'
 export interface TaskType {
   id: string
   text: string
-  completedAt: Date | null
+  completed: boolean
 }
 
 export function Home() {
@@ -18,6 +18,21 @@ export function Home() {
 
   function handleAddTask(task: TaskType) {
     setTasks([...tasks, task])
+  }
+
+  function handleRemoveTask(id: string) {
+    setTasks(tasks.filter((task) => task.id !== id))
+  }
+
+  function handleCompleteTask(id: string) {
+    setTasks(
+      tasks.map((task) => {
+        if (task.id === id) {
+          task.completed = !task.completed
+        }
+        return task
+      }),
+    )
   }
 
   return (
@@ -30,7 +45,13 @@ export function Home() {
         <FlatList
           data={tasks}
           keyExtractor={(item) => item.id}
-          renderItem={({ item }) => <Task />}
+          renderItem={({ item }) => (
+            <Task
+              task={item}
+              onRemoveTask={handleRemoveTask}
+              onCompleteTask={handleCompleteTask}
+            />
+          )}
           ListEmptyComponent={AnyTasks}
           contentContainerStyle={{
             paddingBottom: 320,
