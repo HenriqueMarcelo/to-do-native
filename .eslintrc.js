@@ -4,5 +4,6 @@ module.exports = {
     'no-unused-vars': 1,
     'prefer-template': 1,
     'prettier/prettier': 1,
+    'no-empty-pattern': 1,
   },
 }

@@ -40,7 +40,7 @@ export function Home() {
       <Header />
       <View style={style.subContainer}>
         <Form onCreateTask={handleAddTask} />
-        <Counters />
+        <Counters tasks={tasks} />
 
         <FlatList
           data={tasks}
