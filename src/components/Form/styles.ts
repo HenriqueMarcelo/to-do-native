@@ -1,7 +1,7 @@
-import { StyleSheet } from "react-native";
+import { StyleSheet } from 'react-native'
 
 export const styles = StyleSheet.create({
-input: {
+  input: {
     backgroundColor: '#262626',
     borderRadius: 6,
     height: 56,
@@ -31,4 +31,4 @@ input: {
     width: '100%',
     gap: 12,
   },
-});
+})
